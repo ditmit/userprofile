@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+<style type="text/css">
+	table{
+		border-collapse: collapse;
+ border: 2px solid green;
+
+	}
+td{
+	border: 2px solid green; padding: 10px;
+}
+
+
+</style>
+<script type="text/javascript">
+	function name(){
+var userData1 = {firstName: "sergey", midName: "ivanovich", lastName:"smirnov"};
+
+	
+		document.getElementById('last').value = userData1.lastName;
+
+		document.getElementById('first').value = userData1.firstName;
+
+		document.getElementById('mid').value = userData1.midName;
+
+
+document.getElementById('fio').value = userData1.lastName + ' ' +
+userData1.firstName + ' ' + 
+userData1.midName;
+	} 
+
+
+
+</script>
+	<title>lesson 2</title>
+</head>
+<body onload="name();">
+<form>
+
+<table>
+
+
+
+<tr>
+	<td> Имя</td>
+<td><input type="text"  id="first" name="first"></td>
+</tr>
+
+<tr>
+	<td> Отчества</td>
+<td><input type="text" id="mid" name="mid"></td>
+</tr>
+
+<tr>
+	<td >Фамилия </td>
+<td><input type="text" id="last" name="last"></td>
+</tr>
+
+<tr>
+	<td>ФИО</td>
+	<td>
+		
+		<textarea name="fio" id="fio" readonly>
+
+
+</textarea>
+
+	</td>
+</tr>
+
+</table>
+</form>
+
+
+
+</body>
+</html>
